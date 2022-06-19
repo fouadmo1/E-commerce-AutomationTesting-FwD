@@ -1,0 +1,15 @@
+org\example\stepDef\DO2_LoginStepDef.class
+org\example\testRunner\runner.class
+org\example\stepDef\DO9_ShoppingCartStepDef.class
+org\example\Page\Po1_Register.class
+org\example\stepDef\D07_followUsStepDef.class
+org\example\stepDef\DO5_hoverCategoriesStepDef.class
+org\example\stepDef\Hooks.class
+org\example\stepDef\D04_searchStepDef.class
+org\example\Page\Po4_ShoppingCart.class
+org\example\Page\Po2_Login.class
+org\example\stepDef\DO3_CurrenciesSteoDef.class
+org\example\Page\Po3_HomePage.class
+org\example\stepDef\D08_WishlistStepDef.class
+org\example\stepDef\DO6_homeSliders.class
+org\example\stepDef\D01_registerStepDef.class

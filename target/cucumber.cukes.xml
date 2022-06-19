@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="15" time="297.619">
+<testcase classname="users could register with new account" name="guest user could register with valid data successfully" time="32.43">
+<system-out><![CDATA[Given user go to register page..............................................passed
+When user select gender.....................................................passed
+And user enter first name "alii" and "moohsn" Last name.....................passed
+And user enter date of birth................................................passed
+And user enter email "fouadmohamed8@gmail.com"..............................passed
+And user fills password fields "123456" and "123456"........................passed
+Then user clicks on register button.........................................passed
+And success message is displayed............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="user could select different Categories" name="logged user select Categories" time="20.885">
+<system-out><![CDATA[Given user login successfully...............................................passed
+When user select random categories and hover on it..........................passed
+Then select random subcategories and click on it............................passed
+]]></system-out>
+</testcase>
+<testcase classname="home sliders" name="users could click on First homeslider and navigate to another tab" time="34.29">
+<failure message="Expected condition failed: waiting for url to contain &quot;https://demo.nopcommerce.com/nokia-lumia-1020&quot;. Current url: &quot;https://demo.nopcommerce.com/&quot; (tried for 5 second(s) with 500 milliseconds interval)&#10;Build info: version: '4.2.2', revision: '683ccb65d6'&#10;System info: host: 'DESKTOP-G4V72L8', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63603}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63603/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d090f80171cd876c2f0e8a3a7491d294" type="org.openqa.selenium.TimeoutException"><![CDATA[Given user login successfully...............................................passed
+When user click on first home slider........................................passed
+Then System should direct user to nokia-lumia URL "https://demo.nopcommerce.com/nokia-lumia-1020".failed
+
+StackTrace:
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain "https://demo.nopcommerce.com/nokia-lumia-1020". Current url: "https://demo.nopcommerce.com/" (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'DESKTOP-G4V72L8', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63603}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63603/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d090f80171cd876c2f0e8a3a7491d294
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at org.example.stepDef.DO6_homeSliders.FirstsliderCheck(DO6_homeSliders.java:25)
+	at ✽.System should direct user to nokia-lumia URL "https://demo.nopcommerce.com/nokia-lumia-1020"(file:///E:/Mvencucamber/src/main/resources/Features/F06_homeSliders.feature:6)
+]]></failure>
+</testcase>
+<testcase classname="home sliders" name="" time="14.408">
+<failure message="Expected condition failed: waiting for url to contain &quot;https://demo.nopcommerce.com/iphone-6&quot;. Current url: &quot;https://demo.nopcommerce.com/&quot; (tried for 5 second(s) with 500 milliseconds interval)&#10;Build info: version: '4.2.2', revision: '683ccb65d6'&#10;System info: host: 'DESKTOP-G4V72L8', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63646}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63646/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 05a51858b125f1c7610a045f29da3789" type="org.openqa.selenium.TimeoutException"><![CDATA[Given user login successfully...............................................passed
+When user click on sub home slider..........................................passed
+Then System should direct user to Iphone-6 URL "https://demo.nopcommerce.com/iphone-6".failed
+
+StackTrace:
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain "https://demo.nopcommerce.com/iphone-6". Current url: "https://demo.nopcommerce.com/" (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'DESKTOP-G4V72L8', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63646}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63646/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 05a51858b125f1c7610a045f29da3789
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at org.example.stepDef.DO6_homeSliders.SecondSliderCheck(DO6_homeSliders.java:32)
+	at ✽.System should direct user to Iphone-6 URL "https://demo.nopcommerce.com/iphone-6"(file:///E:/Mvencucamber/src/main/resources/Features/F06_homeSliders.feature:11)
+]]></failure>
+</testcase>
+<testcase classname="user could add item to check list" name="user could add different products to Wishlist" time="13.288">
+<failure message="The following asserts failed:&#10;&#9;msg expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[Given User add a product "HTC One M8 Android L 5.0 Lollipop" to his wishlist.passed
+Then the product added to the wishlist and see success msg "wishlist".......failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	msg expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at org.example.stepDef.D08_WishlistStepDef.checkMsg(D08_WishlistStepDef.java:31)
+	at ✽.the product added to the wishlist and see success msg "wishlist"(file:///E:/Mvencucamber/src/main/resources/Features/F08_Wishlist.feature:6)
+]]></failure>
+</testcase>
+<testcase classname="User could Switch between currencies" name="user could switch between currencies" time="35.02">
+<system-out><![CDATA[Given user login successfully...............................................passed
+When user click on the droplist on the topleft and choose euro..............passed
+Then all currencies changed to '€'..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="user could seach for products" name="user could search for product using name" time="18.112">
+<system-out><![CDATA[Given user login successfully...............................................passed
+And user type the "book" of the product on the search field.................passed
+When user click on search Button............................................passed
+Then user sees the product that he searched for "book"......................passed
+]]></system-out>
+</testcase>
+<testcase classname="user could seach for products" name="user could search for product using name 2" time="9.224">
+<system-out><![CDATA[Given user login successfully...............................................passed
+And user type the "laptop" of the product on the search field...............passed
+When user click on search Button............................................passed
+Then user sees the product that he searched for "laptop"....................passed
+]]></system-out>
+</testcase>
+<testcase classname="user could seach for products" name="user could search for product using name 3" time="14.655">
+<system-out><![CDATA[Given user login successfully...............................................passed
+And user type the "nike" of the product on the search field.................passed
+When user click on search Button............................................passed
+Then user sees the product that he searched for "nike"......................passed
+]]></system-out>
+</testcase>
+<testcase classname="F07_followUs | users could open followUs links" name="user opens facebook link" time="9.28">
+<system-out><![CDATA[Given user login successfully...............................................passed
+When User click on facebook link............................................passed
+Then "https://www.facebook.com/nopCommerce" is opened in new tab............passed
+]]></system-out>
+</testcase>
+<testcase classname="F07_followUs | users could open followUs links" name="user opens twitter link" time="13.893">
+<system-out><![CDATA[Given user login successfully...............................................passed
+When User click on twitter link.............................................passed
+Then "https://twitter.com/nopCommerce" is opened in new tab.................passed
+]]></system-out>
+</testcase>
+<testcase classname="F07_followUs | users could open followUs links" name="user opens rss link" time="14.229">
+<failure message="Index: 1, Size: 1" type="java.lang.IndexOutOfBoundsException"><![CDATA[Given user login successfully...............................................passed
+When User click on rss link.................................................failed
+Then "https://demo.nopcommerce.com/new-online-store-is-open" is opened in new tab.skipped
+
+StackTrace:
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at org.example.stepDef.D07_followUsStepDef.Rss(D07_followUsStepDef.java:31)
+	at ✽.User click on rss link(file:///E:/Mvencucamber/src/main/resources/Features/FO7_followUs.feature:16)
+]]></failure>
+</testcase>
+<testcase classname="F07_followUs | users could open followUs links" name="user opens youtube link" time="12.234">
+<system-out><![CDATA[Given user login successfully...............................................passed
+When User click on youtube link.............................................passed
+Then "https://www.youtube.com/user/nopCommerce" is opened in new tab........passed
+]]></system-out>
+</testcase>
+<testcase classname="User could add item to cart" name="user adds item to cart" time="46.951">
+<system-out><![CDATA[When User click add cart button for two products............................passed
+Then System add products to cart  and increase rows of Shopping cart table..passed
+]]></system-out>
+</testcase>
+<testcase classname="users could Login with registered account" name="user could login with valid email and password" time="8.283">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with valid email "fouadmohamed8@gmail.com" and password "123456".passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+]]></system-out>
+</testcase>
+</testsuite>

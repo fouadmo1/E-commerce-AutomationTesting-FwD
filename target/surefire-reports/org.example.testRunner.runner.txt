@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: org.example.testRunner.runner
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 300.279 s <<< FAILURE! - in org.example.testRunner.runner
+org.example.testRunner.runner.runScenario["user could add different products to Wishlist", "user could add item to check list"](5)  Time elapsed: 13.283 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	msg expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at org.example.stepDef.D08_WishlistStepDef.checkMsg(D08_WishlistStepDef.java:31)
+	at ✽.the product added to the wishlist and see success msg "wishlist"(file:///E:/Mvencucamber/src/main/resources/Features/F08_Wishlist.feature:6)
+
+org.example.testRunner.runner.runScenario["user opens rss link", "F07_followUs | users could open followUs links"](12)  Time elapsed: 14.232 s  <<< FAILURE!
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at org.example.stepDef.D07_followUsStepDef.Rss(D07_followUsStepDef.java:31)
+	at ✽.User click on rss link(file:///E:/Mvencucamber/src/main/resources/Features/FO7_followUs.feature:16)
+
